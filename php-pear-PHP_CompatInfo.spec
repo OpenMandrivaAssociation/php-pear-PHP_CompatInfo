@@ -46,10 +46,10 @@ find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix
 %install
 rm -rf %{buildroot}
 
-install -d %{buildroot}%{_datadir}/pear/%{_class}/data
+install -d %{buildroot}%{_datadir}/pear/%{_class}/%{_subclass}
 
-install %{_pearname}-%{version}/%{_subclass}*.php %{buildroot}%{_datadir}/pear/%{_class}
-install %{_pearname}-%{version}/data/* %{buildroot}%{_datadir}/pear/%{_class}/data
+install %{_pearname}-%{version}/*.php %{buildroot}%{_datadir}/pear/%{_class}/
+install %{_pearname}-%{version}/%{_subclass}/*.php %{buildroot}%{_datadir}/pear/%{_class}/%{_subclass}/
 
 install -d %{buildroot}%{_datadir}/pear/packages
 install -m0644 package.xml %{buildroot}%{_datadir}/pear/packages/%{_pearname}.xml
@@ -78,10 +78,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/{docs,scripts}
+%doc %{_pearname}-%{version}/{docs,tests}
 %{_datadir}/pear/%{_class}/*.php
-%{_datadir}/pear/%{_class}/data
-
+%{_datadir}/pear/%{_class}/%{_subclass}//*.php
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
