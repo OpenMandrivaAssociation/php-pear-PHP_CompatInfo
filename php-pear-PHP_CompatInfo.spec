@@ -18,6 +18,7 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 PHP_CompatInfo will parse a file/folder/script/array to find out the
