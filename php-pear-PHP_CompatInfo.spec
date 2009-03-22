@@ -7,11 +7,11 @@
 
 Summary:	%{_pearname} - determine minimal requirements for a program
 Name:		php-pear-%{_pearname}
-Version:	1.8.1
-Release:	%mkrel 2
+Version:	1.9.0
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/PHP_CompatInfo/
 Requires(post): php-pear
 Requires(preun): php-pear
