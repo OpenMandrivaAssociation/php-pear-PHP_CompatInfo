@@ -5,7 +5,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.9.0
-Release:	7
+Release:	8
 Summary:	Determine minimal requirements for a program
 
 License:	PHP License
