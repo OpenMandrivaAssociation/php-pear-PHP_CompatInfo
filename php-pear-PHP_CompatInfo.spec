@@ -10,7 +10,7 @@ Summary:	Determine minimal requirements for a program
 
 License:	PHP License
 Group:		Development/PHP
-URL:		http://pear.php.net/package/PHP_CompatInfo/
+URL:		https://pear.php.net/package/PHP_CompatInfo/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
